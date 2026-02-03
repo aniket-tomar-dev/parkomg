@@ -75,8 +75,6 @@ export default function EntryScreen() {
 
     return (
         <ScreenWrapper style={styles.container} keyboardAvoiding>
-            <LoadingOverlay visible={isLoading} message="Creating Entry..." />
-
             <View style={styles.content}>
                 <View style={styles.header}>
                     <Text style={[styles.title, { color: theme.colors.onBackground }]}>New Vehicle Entry</Text>

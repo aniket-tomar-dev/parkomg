@@ -1,23 +1,28 @@
-import { Stack } from 'expo-router';
+import { Tabs } from 'expo-router';
+import { useTheme } from 'react-native-paper';
 
 export default function StaffLayout() {
+    const theme = useTheme();
+
     return (
-        <Stack>
-            <Stack.Screen
+        <Tabs
+            screenOptions={{
+                headerShown: false
+            }}
+        >
+            <Tabs.Screen
                 name="active-parkings"
                 options={{
-                    title: 'Active Parkings',
-                    headerShown: false
+
                 }}
             />
-            <Stack.Screen
+            <Tabs.Screen
                 name="entry"
                 options={{
-                    title: 'New Entry',
+                    title: 'New Vehicle Entry',
                     headerShown: false,
-                    presentation: 'modal'
                 }}
             />
-        </Stack>
+        </Tabs>
     );
 }

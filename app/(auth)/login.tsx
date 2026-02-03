@@ -51,8 +51,6 @@ export default function LoginScreen() {
 
     return (
         <ScreenWrapper style={styles.container} keyboardAvoiding>
-            <LoadingOverlay visible={isLoading} message="Sending OTP..." />
-
             <View style={styles.content}>
                 <View style={styles.header}>
                     <View style={[styles.logoPlaceholder, { backgroundColor: theme.colors.primary }]}>

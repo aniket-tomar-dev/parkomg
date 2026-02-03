@@ -80,8 +80,6 @@ export default function OtpScreen() {
 
     return (
         <ScreenWrapper style={styles.container} keyboardAvoiding>
-            <LoadingOverlay visible={isLoading} message="Verifying..." />
-
             <View style={styles.content}>
                 <View style={styles.header}>
                     <Text style={[styles.title, { color: theme.colors.onBackground }]}>Verify OTP</Text>
